@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingManagerReportSalesFeedbackC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0" layoutX="-1.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="26.0" layoutY="39.0" prefHeight="39.0" prefWidth="389.0" text="Sales Feedback Report">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="24.0" layoutY="100.0" prefHeight="329.0" prefWidth="658.0">
+         <children>
+            <TableView fx:id="salesFeedbackTable" layoutX="136.0" layoutY="28.0" prefHeight="217.0" prefWidth="426.0" style="-fx-background-color: #026548;">
+               <columns>
+                  <TableColumn fx:id="saleCodeHeadline" prefWidth="84.00003051757812" text="Sale Code" />
+                  <TableColumn fx:id="numberOfUsersHeadline" prefWidth="109.99998474121094" text="Number Of Users" />
+                  <TableColumn fx:id="totalIncomeHeadline" prefWidth="110.0" text="Total Income" />
+                  <TableColumn fx:id="saleDiscountHeadline" prefWidth="120.00009155273438" text="Sale Discount" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

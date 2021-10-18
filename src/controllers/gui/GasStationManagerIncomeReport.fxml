@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GasStationManagerIncomeReports">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0" layoutX="-4.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="37.0" prefHeight="33.0" prefWidth="366.0" text="Quarterly Income Report">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="297.0" fitWidth="366.0" layoutX="187.0" layoutY="101.0">
+         <image>
+            <Image url="@../../pictures/clipboardEmpty.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="incomeTable" layoutX="206.0" layoutY="149.0" prefHeight="228.0" prefWidth="329.0">
+         <columns>
+            <TableColumn fx:id="productColumnIncomeTable" prefWidth="111.0" text="Product" />
+            <TableColumn fx:id="totalColumnIncomeTable" prefWidth="106.0" text="Total Income" />
+            <TableColumn fx:id="dateColumn" prefWidth="111.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label fx:id="labelMonths" layoutX="228.0" layoutY="70.0" prefHeight="31.0" prefWidth="272.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

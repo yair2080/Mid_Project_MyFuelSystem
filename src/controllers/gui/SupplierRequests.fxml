@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SupplierRequestsC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0" layoutX="-1.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="53.0" layoutY="23.0" prefHeight="56.0" prefWidth="230.0" text="Requests">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="99.0" text="Requests Table">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="acceptbtn" layoutX="481.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleacceptbtn" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #25AD1B;" text="Accept" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="rejectbtn" layoutX="606.0" layoutY="388.0" mnemonicParsing="false" onAction="#handlerejectbtn" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #E62929;" text="Reject" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="requesteTable" layoutX="27.0" layoutY="148.0" onMouseClicked="#handleRowclick" prefHeight="200.0" prefWidth="379.0">
+        <columns>
+          <TableColumn fx:id="datecolumn" prefWidth="183.0" text="Date" />
+            <TableColumn fx:id="suppliercolumn" minWidth="0.0" prefWidth="0.0" text="supplier" />
+          <TableColumn fx:id="gasstationmanager" prefWidth="213.0" text="Gas Station Manager" />
+            <TableColumn fx:id="productname" minWidth="0.0" prefWidth="0.0" text="Product Name" />
+            <TableColumn fx:id="productamount" minWidth="0.0" prefWidth="0.0" text="Product Amount" />
+            <TableColumn fx:id="deliveredcol" minWidth="0.0" prefWidth="0.0" text="dilevered" />
+        </columns>
+      </TableView>
+      <Pane layoutX="441.0" layoutY="70.0" prefHeight="310.0" prefWidth="313.0">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="313.0" layoutX="-2.0" layoutY="-4.0">
+               <image>
+                  <Image url="@../../pictures/openLetter.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="reqtextarea" layoutX="56.0" layoutY="38.0" prefHeight="100.0" prefWidth="197.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
