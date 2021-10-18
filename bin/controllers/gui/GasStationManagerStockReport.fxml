@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GasStationManagerStockReports">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="780.0" layoutX="-7.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="253.0" fitWidth="413.0" layoutX="170.0" layoutY="118.0">
+         <image>
+            <Image url="@../../pictures/clipboardEmpty.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="198.0" layoutY="48.0" prefHeight="33.0" prefWidth="336.0" text="Quarterly Stock Report">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="stockTable" layoutX="193.0" layoutY="154.0" prefHeight="202.0" prefWidth="359.0">
+         <columns>
+            <TableColumn fx:id="productColumnStockTable" prefWidth="123.0" text="Product" />
+            <TableColumn fx:id="quantityInStockColumnStockTable" prefWidth="124.0" text="Liters in stock" />
+            <TableColumn fx:id="dateStock" prefWidth="108.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label fx:id="monthsLabel" layoutX="242.0" layoutY="90.0" prefHeight="33.0" prefWidth="263.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

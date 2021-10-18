@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingManagerSalesMainC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0" layoutX="-1.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="53.0" layoutY="23.0" prefHeight="56.0" prefWidth="230.0" text="Sales">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="salesTable" layoutX="59.0" layoutY="122.0" onMouseClicked="#handleSalesTableMouseClick" prefHeight="163.0" prefWidth="649.0" style="-fx-background-color: #00B1DE;">
+        <columns>
+          <TableColumn fx:id="saleCodeHeadline" prefWidth="67.33332061767578" text="Sale Code" />
+          <TableColumn fx:id="productNameHeadline" prefWidth="111.33332061767578" text="Product Name" />
+            <TableColumn fx:id="discountHeadline" prefWidth="54.66667175292969" text="Discount" />
+            <TableColumn fx:id="startDateHeadline" prefWidth="88.0" text="Start Date" />
+            <TableColumn fx:id="daysDurationHeadline" prefWidth="84.666748046875" text="Days Duration" />
+            <TableColumn fx:id="startHourHeadline" prefWidth="66.66668701171875" text="Start Hour" />
+            <TableColumn fx:id="hoursDurationHeadline" prefWidth="94.66668701171875" text="Hours Duration" />
+            <TableColumn fx:id="gasStationHeadline" prefWidth="79.33331298828125" text="Gas Station" />
+            <TableColumn fx:id="pictureColorHeadline" minWidth="0.0" prefWidth="0.0" text="Picture Color" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="96.0" fitWidth="158.0" layoutX="14.0" layoutY="-11.0">
+         <image>
+            <Image url="@../../pictures/sale-clipart-business-sale-2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="createNewSaleButton" layoutX="214.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleCreateNewSaleButtonClick" prefHeight="37.0" prefWidth="146.0" style="-fx-background-color: #13BC45;" text="Create New Sale" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="59.0" layoutY="317.0" text="Click on a table row and then you can" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="editSaleButton" layoutX="473.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleEditSaleButtonClick" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #13AEBC;" text="Edit Sale" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteSaleButton" layoutX="612.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleDeleteSaleButtonClick" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: #ED3B3B;" text="Delete Sale" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="569.0" layoutY="317.0" text="Or" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="355.0" text="You can also" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="355.0" text="without pressing anything else" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

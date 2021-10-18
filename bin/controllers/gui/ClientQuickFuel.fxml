@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientQuickFuelC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="40.0" layoutY="23.0" prefHeight="56.0" prefWidth="237.0" text="Quick Fuel">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="40.0" layoutY="147.0" prefHeight="204.0" prefWidth="237.0">
+         <children>
+            <Label layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="189.0" text="Your client subscription">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="60.0" prefHeight="25.0" prefWidth="140.0" text="Your discount is">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblClientSubc" layoutX="6.0" layoutY="35.0" prefHeight="25.0" prefWidth="189.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblClientDiscount" layoutX="6.0" layoutY="81.0" prefHeight="25.0" prefWidth="131.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="119.0" prefHeight="25.0" prefWidth="219.0" text="Fuel Price today :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPriceFuelToday1" layoutX="6.0" layoutY="144.0" prefHeight="25.0" prefWidth="110.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPriceFuelToday" layoutX="119.0" layoutY="144.0" prefHeight="25.0" prefWidth="97.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="178.0" prefHeight="25.0" prefWidth="140.0" text="Gas Station Name: " textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblgasS" layoutX="141.0" layoutY="182.0" prefHeight="17.0" prefWidth="97.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Label layoutX="40.0" layoutY="111.0" prefHeight="35.0" prefWidth="219.0" text="1. Your Subscription">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="113.0" prefHeight="35.0" prefWidth="195.0" text="2. Refuel your car">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMoneyAmount" layoutX="335.0" layoutY="184.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="335.0" layoutY="160.0" text="Money amount">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chcBoxMoneyAmount" layoutX="311.0" layoutY="176.0" mnemonicParsing="false" onAction="#handlecheckBoxMoneyAmount" prefHeight="17.0" prefWidth="17.0" />
+      <CheckBox fx:id="chkBoxFullTank" layoutX="311.0" layoutY="226.0" mnemonicParsing="false" onAction="#handlecheckBoxFullTank" />
+      <Label layoutX="350.0" layoutY="221.0" text="Full Tank">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStartfuel" layoutX="312.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #0B5336;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblTotalPrice" layoutX="640.0" layoutY="117.0" prefHeight="27.0" prefWidth="114.0" text="______">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="113.0" prefHeight="35.0" prefWidth="81.0" text="Price :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChoosePayment" layoutX="552.0" layoutY="291.0" prefHeight="17.0" prefWidth="154.0" text="Choose how you wanna pay" textFill="WHITE" />
+      <TextField fx:id="saleCodeTextField" layoutX="563.0" layoutY="210.0" prefHeight="25.0" prefWidth="131.0" />
+      <Label layoutX="563.0" layoutY="160.0" prefHeight="25.0" prefWidth="154.0" text="Have a discount?">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="181.0" prefHeight="25.0" prefWidth="154.0" text="Insert SaleCode :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleDisconnectButton" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: #6E162F;" text="Disconnect" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="386.0" prefHeight="25.0" prefWidth="170.0" text="If You dont want to refuel" textFill="#ab6077">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernamewelcome" layoutX="251.0" layoutY="33.0" prefHeight="35.0" prefWidth="341.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="65.0" layoutX="637.0" layoutY="313.0">
+         <image>
+            <Image url="@../../pictures/cash.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btncash" layoutX="625.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleCashButton" prefHeight="67.0" prefWidth="88.0" style="-fx-background-color: transparency;" />
+      <ImageView fx:id="btnCreditCard" fitHeight="45.0" fitWidth="67.0" layoutX="559.0" layoutY="319.0">
+         <image>
+            <Image url="@../../pictures/424-4241618_no-credit-cards-logo-png-transparent-png.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btncredit" layoutX="555.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleCreditCardButton" prefHeight="56.0" prefWidth="74.0" style="-fx-background-color: transparency;" />
+      <Button fx:id="checkDiscount" layoutX="563.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleCheckDiscountButtonClick" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #0B5336;" text="check discount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

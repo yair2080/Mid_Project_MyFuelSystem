@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientHomeSaleC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="53.0" layoutY="28.0" prefHeight="56.0" prefWidth="230.0" text="Sales">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="113.0" prefHeight="32.0" prefWidth="251.0" text="Select a sale row from">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane fx:id="picturePane" layoutX="385.0" layoutY="101.0" prefHeight="333.0" prefWidth="322.0">
+         <children>
+            <ImageView fx:id="randomPicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoPink1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="saleLabel1" layoutX="64.0" layoutY="117.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="saleLabel2" layoutX="64.0" layoutY="143.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="saleLabel3" layoutX="64.0" layoutY="167.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="saleLabel4" layoutX="64.0" layoutY="199.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="saleLabel5" layoutX="64.0" layoutY="224.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="discountLabel" layoutX="227.0" layoutY="52.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="240.0" prefHeight="32.0" prefWidth="156.0" text="keep my saleCode" textFill="#221fff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="256.0" prefHeight="32.0" prefWidth="216.0" text="Insert it when you buy" textFill="#221fff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="salesTable" layoutX="53.0" layoutY="174.0" onMouseClicked="#handleSalesTableRowClick" prefHeight="130.0" prefWidth="275.0">
+        <columns>
+          <TableColumn fx:id="productNameHeadline" prefWidth="123.33334732055664" text="Product Name" />
+          <TableColumn fx:id="discountHeadline" minWidth="0.0" prefWidth="0.0" text="Discount" />
+            <TableColumn fx:id="startDateHeadline" minWidth="0.0" prefWidth="0.0" text="Start Date" />
+            <TableColumn fx:id="daysDurationHeadline" minWidth="0.0" prefWidth="0.0" text="Days Duration" />
+            <TableColumn fx:id="startHourHeadline" minWidth="0.0" prefWidth="0.0" text="Start Hour" />
+            <TableColumn fx:id="hoursDurationHeadline" minWidth="0.0" prefWidth="0.0" text="Hours Duration" />
+            <TableColumn fx:id="gasStationHeadline" minWidth="0.0" prefWidth="77.99995422363281" text="Gas Station" />
+            <TableColumn fx:id="pictureColorHeadline" minWidth="0.0" prefWidth="0.0" text="Picture Color" />
+            <TableColumn fx:id="saleCodeHeadline" minWidth="0.0" prefWidth="65.33331298828125" text="Sale Code" />
+        </columns>
+      </TableView>
+      <Label layoutX="53.0" layoutY="138.0" prefHeight="32.0" prefWidth="97.0" text="the table">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

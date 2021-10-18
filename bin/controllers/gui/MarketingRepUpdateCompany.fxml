@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingRepUpdateCompanyC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="53.0" layoutY="31.0" prefHeight="56.0" prefWidth="455.0" text="Update Company's Details">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneDetails" layoutX="378.0" layoutY="96.0" prefHeight="347.0" prefWidth="377.0">
+         <children>
+            <Label layoutX="15.0" layoutY="5.0" text="Company Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CompanyNameTextField" layoutX="15.0" layoutY="24.0" prefHeight="25.0" prefWidth="112.0" />
+            <TextField fx:id="CompanyPhoneTextField" layoutX="15.0" layoutY="74.0" prefHeight="25.0" prefWidth="112.0" />
+            <TextField fx:id="CompanyAddressTextField" layoutX="146.0" layoutY="74.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label layoutX="15.0" layoutY="55.0" text="Phone Number">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="55.0" text="Address">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CompanyMailTextField" layoutX="146.0" layoutY="24.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label layoutX="146.0" layoutY="5.0" text="Mail">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="126.0" text="Vehicle number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CompanyVehicleNumberTextField" layoutX="123.0" layoutY="149.0" prefHeight="25.0" prefWidth="112.0" />
+            <Label layoutX="246.0" layoutY="126.0" text="Pump number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="UpdateButton" layoutX="71.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #6C7173;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="Vehiclscombo" layoutX="16.0" layoutY="148.0" onAction="#handleVehiclesCombo" prefHeight="25.0" prefWidth="96.0" />
+            <Label layoutX="16.0" layoutY="125.0" text="Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="companyPazCheckBox" layoutX="272.0" layoutY="197.0" mnemonicParsing="false" text="Paz" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="companySonolCheckBox" layoutX="272.0" layoutY="242.0" mnemonicParsing="false" text="Sonol" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="companyTenCheckBox" layoutX="272.0" layoutY="266.0" mnemonicParsing="false" text="Ten" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="companyDelekCheckBox" layoutX="272.0" layoutY="219.0" mnemonicParsing="false" text="Delek" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <ComboBox fx:id="companyApproachNumbercombo" layoutX="17.0" layoutY="228.0" prefHeight="25.0" prefWidth="94.0" />
+            <ComboBox fx:id="companyClientTypeNumbercombo" layoutX="138.0" layoutY="227.0" prefHeight="25.0" prefWidth="94.0" />
+            <Label layoutX="21.0" layoutY="208.0" text="Approach" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="208.0" text="Client type" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="companypumpcombo" layoutX="246.0" layoutY="148.0" prefHeight="25.0" prefWidth="94.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="CompanyUpdateTableView" layoutX="24.0" layoutY="107.0" onMouseClicked="#handleRowClick" prefHeight="283.0" prefWidth="340.0">
+        <columns>
+          <TableColumn fx:id="CompanyNameTableColumn" prefWidth="114.0" text="Company Name" />
+          <TableColumn fx:id="MailTableColumn" prefWidth="113.0" text="Mail" />
+            <TableColumn fx:id="PhoneNumberTableColumn" prefWidth="112.0" text="Phone Number" />
+            <TableColumn fx:id="AddressTableColumn" minWidth="0.0" prefWidth="0.0" text="address" />
+            <TableColumn fx:id="usernameTableColumn" minWidth="0.0" prefWidth="0.0" text="username" />
+            <TableColumn fx:id="passwordunTableColumn" minWidth="0.0" prefWidth="0.0" text="passwordun" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

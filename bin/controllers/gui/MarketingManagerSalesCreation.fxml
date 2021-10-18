@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #A5C7CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingManagerSalesCreationC">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="769.0">
+         <image>
+            <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="userWelcomeLabel" layoutX="53.0" layoutY="23.0" prefHeight="56.0" prefWidth="230.0" text="Sales">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="102.0" fitWidth="175.0" layoutX="34.0" layoutY="-11.0">
+         <image>
+            <Image url="@../../pictures/sale-clipart-business-sale-2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="205.0" prefHeight="17.0" prefWidth="81.0" text="Start Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="248.0" prefHeight="17.0" prefWidth="65.0" text="Start Hour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="163.0" text="Product">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ChoiceBox fx:id="productChoiceBox" layoutX="54.0" layoutY="180.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="207.0" layoutY="163.0" text="Discount">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="gasStationChoiceBox" layoutX="54.0" layoutY="308.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="66.0" layoutY="290.0" text="Gas Station" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="bluePictureButton" layoutX="361.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleBluePictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #689bb9;" />
+      <Pane fx:id="picturePane" layoutX="410.0" layoutY="106.0" prefHeight="333.0" prefWidth="322.0">
+         <children>
+            <ImageView fx:id="randomPicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoPink1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="greenPicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoGreen1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="orangePicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoOrange1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blue1picture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoBlue1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Blue2Picture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoBlue2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="redPicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoDark.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BrownPicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoBrown.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="purpulePicture" fitHeight="314.0" fitWidth="299.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../pictures/newSaleLogoPurple1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="saleLabel1" layoutX="64.0" layoutY="117.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="saleLabel2" layoutX="64.0" layoutY="143.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="saleLabel3" layoutX="64.0" layoutY="167.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="saleLabel4" layoutX="64.0" layoutY="199.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="saleLabel5" layoutX="64.0" layoutY="224.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="discountLabel" layoutX="227.0" layoutY="52.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="darkPictureButton" layoutX="361.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleDarkPictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #58474a;" />
+      <Button fx:id="greenPictureButton" layoutX="361.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleGreenPictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #92c29e;" />
+      <Button fx:id="perplePictureButton" layoutX="361.0" layoutY="332.0" mnemonicParsing="false" onAction="#handlePerplePictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #a98ab5;" />
+      <Button fx:id="orangePictureButton" layoutX="361.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleOrangePictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #dea568;" />
+      <Button fx:id="pinkPictureButton" layoutX="361.0" layoutY="364.0" mnemonicParsing="false" onAction="#handlePinkPictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #e4b9c0;" />
+      <Button fx:id="bluePalePictureButton" layoutX="361.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleBluePalePictureButtonClick" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #65d1e3;" />
+      <ChoiceBox fx:id="discountChoiceBox" layoutX="193.0" layoutY="180.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="232.0" layoutY="389.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="showPreviewButton" layoutX="53.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleShowPreviewButtonClick" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: #3EABC0;" text="Show preview" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="192.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleSaveButtonClick" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: #3EC049;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="brownPictureButton" layoutX="361.0" layoutY="211.0" mnemonicParsing="false" onAction="#handleBrownPictureButtonClick" prefHeight="17.0" prefWidth="48.0" style="-fx-background-color: #9a714d;" />
+      <Label layoutX="338.0" layoutY="121.0" text="Choose">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="138.0" text="color">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="124.0" text="Choose sale details">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="205.0" prefHeight="17.0" prefWidth="91.0" text="Days duration">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="248.0" prefHeight="17.0" prefWidth="98.0" text="Hours duration" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="startHourChoiceBox" layoutX="53.0" layoutY="265.0" prefHeight="25.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="daysDurationChoiceBox" layoutX="192.0" layoutY="222.0" prefHeight="25.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="hoursDurationChoiceBox" layoutX="192.0" layoutY="265.0" prefHeight="25.0" prefWidth="122.0" />
+      <DatePicker fx:id="startDatePicker" layoutX="55.0" layoutY="222.0" onAction="#handleStartDatePickerClick" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="55.0" layoutY="163.0" text="*" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="163.0" text="*" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="205.0" text="*" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="290.0" text="*" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

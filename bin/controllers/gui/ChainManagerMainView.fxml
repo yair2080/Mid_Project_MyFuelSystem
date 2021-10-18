@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainProgramPane" prefHeight="520.0" prefWidth="900.0" style="-fx-background-color: #454E55;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChainManagerMainC">
+   <children>
+      <ImageView fitHeight="67.0" fitWidth="129.0" layoutY="1.0">
+         <image>
+            <Image url="@../../pictures/Picture2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="headlineLable" layoutX="176.0" layoutY="-5.0" prefHeight="75.0" prefWidth="171.0" text="Main" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox fx:id="menuVbox" layoutY="114.0" prefHeight="405.0" prefWidth="130.0">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#handleHomeButtonClick" prefHeight="82.0" prefWidth="129.0" style="-fx-background-color: #183C55;">
+               <graphic>
+                  <ImageView fx:id="homePicture" fitHeight="70.0" fitWidth="68.0">
+                     <image>
+                        <Image url="@../../pictures/Icon7.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ratesButton" mnemonicParsing="false" onAction="#handleRatesButtonClick" prefHeight="82.0" prefWidth="129.0" style="-fx-background-color: #183C55;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../../pictures/Rates2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="messagesButton" mnemonicParsing="false" onAction="#handleMessagesButtonClick" prefHeight="82.0" prefWidth="129.0" style="-fx-background-color: #183C55;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="57.0">
+                     <image>
+                        <Image url="@../../pictures/messages.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="129.0" style="-fx-background-color: #183C55;" textFill="WHITE" />
+            <Pane prefHeight="70.0" prefWidth="130.0" style="-fx-background-color: #183C55;" />
+         </children>
+      </VBox>
+      <Pane layoutY="66.0" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #183C55;">
+         <children>
+            <Label fx:id="helloLabel" layoutX="20.0" layoutY="5.0" prefHeight="17.0" prefWidth="91.0" text="Hello ______!" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="disconnectButton" layoutX="9.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleDisconnectButton" prefHeight="17.0" prefWidth="111.0" style="-fx-background-color: #6E162F;" text="Disconnect" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <BorderPane fx:id="whiteBorderPane" layoutX="130.0" layoutY="66.0" prefHeight="453.0" prefWidth="769.0" style="-fx-background-color: #FFFFFF;" />
+      <BorderPane fx:id="homePane" layoutX="131.0" layoutY="66.0" prefHeight="453.0" prefWidth="769.0">
+         <top>
+            <Pane prefHeight="453.0" prefWidth="769.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="453.0" fitWidth="769.0" layoutX="-2.0">
+                     <image>
+                        <Image url="@../../pictures/photo-1521080755838-d2311117f767.jfif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="userWelcomeLabel" layoutX="51.0" layoutY="32.0" prefHeight="56.0" prefWidth="230.0" text="Home">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="318.0" fitWidth="539.0" layoutX="228.0" layoutY="135.0">
+                     <image>
+                        <Image url="@../../pictures/gasStationPic1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="103.0" prefHeight="32.0" prefWidth="683.0" text="MyFuel  system supports fuel products such as petrol, diesel,">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="135.0" prefHeight="32.0" prefWidth="683.0" text="motorcycle fuel and home heating fuel">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="159.0" layoutX="174.0" layoutY="38.0">
+                     <image>
+                        <Image url="@../../pictures/welcome1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
