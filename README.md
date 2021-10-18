@@ -1,4 +1,2 @@
 # Mid_Project_MyFuelSystem
-"MyFuel" system for fuel products sailing
-Was built according to a Client-Server architecture in Java
-Includes a web interface
+"MyFuel" system for fuel products sailing. was built according to a Client-Server architecture in Java. includes a web interface
